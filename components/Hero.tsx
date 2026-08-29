@@ -3,6 +3,12 @@ import { LeadForm } from "@/components/LeadForm";
 import { Container } from "@/components/ui";
 import { images } from "@/lib/project-data";
 
+const heroOffers = [
+  "Official pricing when it is published",
+  "Floor plans when they are released",
+  "Launch details when they are confirmed",
+] as const;
+
 export function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-ink text-paper">
@@ -28,22 +34,29 @@ export function Hero() {
           </p>
           <h1
             id="page-title"
-            className="mt-4 font-display text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]"
+            className="mt-4 font-display text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.35rem]"
           >
             <span className="block">Five Oaks Oakville</span>
-            <span className="mt-2 block text-[1.45rem] font-normal text-paper/85 sm:text-3xl">
-              by Caivan Communities
+            <span className="mt-2 block text-[1.5rem] font-normal text-paper/90 sm:text-3xl">
+              Get official updates first
             </span>
           </h1>
-          <p id="answer" className="mt-5 max-w-md text-base leading-7 text-paper/88">
-            Coming-soon detached homes and townhomes. Official prices are not
-            published yet — register for verified updates.
-          </p>
+          <ul className="mt-8 space-y-3 text-base leading-6 text-paper/90">
+            {heroOffers.map((offer) => (
+              <li key={offer} className="flex gap-3">
+                <span
+                  className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-paper"
+                  aria-hidden="true"
+                />
+                {offer}
+              </li>
+            ))}
+          </ul>
         </div>
         <LeadForm
           idPrefix="hero"
           heading="Get Project Updates"
-          support="We’ll email you when official pricing, plans and launch details are published."
+          support="Takes under a minute. No invented prices."
         />
       </Container>
     </section>

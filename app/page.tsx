@@ -42,7 +42,9 @@ export default function Home() {
             >
               What Five Oaks Oakville is — and is not
             </h2>
-            <p className="mt-5 text-lg leading-8 text-ink">{copy.whatIsFiveOaks}</p>
+            <p id="answer" className="mt-5 text-lg leading-8 text-ink">
+              {homePage.answer}
+            </p>
             <p className="mt-4 text-base leading-7 text-ink-muted">
               Search results for Five Oaks Oakville, Five Oaks by Caivan, Five Oaks
               Caivan and Caivan Five Oaks often mix official pages with undated
