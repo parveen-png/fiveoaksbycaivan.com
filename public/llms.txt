@@ -1,0 +1,54 @@
+# Five Oaks by Caivan, Oakville
+
+Canonical domain: https://www.fiveoaksbycaivan.com
+
+Independent informational pages about Five Oaks, a coming-soon Caivan Communities project in Oakville, Ontario, Canada.
+
+This file is experimental and is not a substitute for crawlable HTML. It does not guarantee inclusion in AI-generated answers.
+
+## Entity
+
+- Project: Five Oaks
+- Developer: Caivan Communities
+- Location: Oakville, Ontario, Canada (exact address/intersection TBA)
+- Status: Coming Soon (as of 2026-08-24)
+- Home types: Single-detached homes and townhomes
+- Townhome tenure: Caivan's Oakville overview indicates freehold townhomes; confirm per release
+- This website is independent and is not the official Caivan or Five Oaks website
+- This is not an offering for sale
+
+## Indexable URLs
+
+- https://www.fiveoaksbycaivan.com/
+- https://www.fiveoaksbycaivan.com/location
+- https://www.fiveoaksbycaivan.com/homes
+- https://www.fiveoaksbycaivan.com/pricing
+- https://www.fiveoaksbycaivan.com/floor-plans
+- https://www.fiveoaksbycaivan.com/faqs
+- https://www.fiveoaksbycaivan.com/privacy
+- https://www.fiveoaksbycaivan.com/disclaimer
+
+## Unpublished as of 2026-08-24
+
+- Exact project site/address/intersection
+- Official site plan
+- Number of lots/homes
+- Lot widths, home sizes, bedroom/bathroom configurations and elevations
+- Detailed features and finishes
+- Price list and starting prices
+- Deposit schedule
+- Incentives
+- Release dates and sales launch date
+- Occupancy/closing dates
+- Assignment rules
+- Development charges
+- Parking details
+- Official floor plans
+
+## Official sources
+
+- https://caivan.com/greater-toronto-area/oakville/five-oaks/
+- https://caivan.com/greater-toronto-area/oakville/
+- https://caivan.com/
+
+Primary CTA: Get Project Updates
