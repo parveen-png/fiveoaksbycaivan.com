@@ -193,7 +193,7 @@ export function LeadForm({
     return (
       <div
         id={idPrefix === "hero" || idPrefix === "page" ? "register" : `${idPrefix}-register`}
-        className="card relative overflow-hidden p-5 md:p-7"
+        className="card relative p-5 md:p-7"
       >
         <div className="absolute inset-x-0 top-0 h-1 bg-brass" />
         <div
@@ -217,7 +217,7 @@ export function LeadForm({
   return (
     <div
       id={idPrefix === "hero" || idPrefix === "page" ? "register" : `${idPrefix}-register`}
-      className="card relative overflow-hidden p-5 md:p-7"
+      className="card relative p-5 shadow-xl md:p-7"
     >
       <div className="absolute inset-x-0 top-0 h-1 bg-brass" />
       <h2 id={headingId} className="font-display text-2xl tracking-tight text-ink">
@@ -269,7 +269,7 @@ export function LeadForm({
           />
         </div>
 
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4">
           <Field
             id={`${idPrefix}-firstName`}
             label="First name"
@@ -280,6 +280,7 @@ export function LeadForm({
               id={`${idPrefix}-firstName`}
               name="firstName"
               autoComplete="given-name"
+              placeholder="First name"
               value={values.firstName}
               required
               onChange={(event) => update("firstName", event.target.value)}
@@ -300,6 +301,7 @@ export function LeadForm({
               id={`${idPrefix}-lastName`}
               name="lastName"
               autoComplete="family-name"
+              placeholder="Last name"
               value={values.lastName}
               required
               onChange={(event) => update("lastName", event.target.value)}
@@ -324,6 +326,7 @@ export function LeadForm({
             type="email"
             autoComplete="email"
             inputMode="email"
+            placeholder="you@example.com"
             value={values.email}
             required
             onChange={(event) => update("email", event.target.value)}

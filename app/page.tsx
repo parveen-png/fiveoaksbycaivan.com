@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink } from "@/components/ExternalLink";
 import { FactTable } from "@/components/FactTable";
-import { HeroCta } from "@/components/HeroCta";
+import { Hero } from "@/components/Hero";
 import { ImageFrame } from "@/components/ImageFrame";
 import { LeadForm } from "@/components/LeadForm";
 import { RelatedQuestions } from "@/components/RelatedQuestions";
@@ -31,41 +30,7 @@ export default function Home() {
         speakableSelectors: ["#page-title", "#answer"],
       }}
     >
-      <header className="relative overflow-hidden border-b border-rule bg-ink text-paper">
-        <div className="absolute inset-0">
-          <Image
-            src={images.hero.src}
-            alt={images.hero.alt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover opacity-35"
-          />
-        </div>
-        <Container className="relative grid gap-10 py-16 md:py-20 lg:grid-cols-[minmax(0,1.1fr)_minmax(20rem,24rem)] lg:items-start">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-paper/80">
-              Coming soon · Oakville, Ontario
-            </p>
-            <h1
-              id="page-title"
-              className="mt-4 max-w-3xl font-display text-4xl tracking-tight md:text-6xl"
-            >
-              {homePage.h1}
-            </h1>
-            <p id="answer" className="mt-6 max-w-2xl text-lg leading-8 text-paper/90">
-              {homePage.answer}
-            </p>
-            <p className="mt-4 max-w-2xl text-sm leading-6 text-paper/75">
-              {copy.independentDisclosure}
-            </p>
-            <div className="mt-8 hidden lg:block">
-              <HeroCta />
-            </div>
-          </div>
-          <LeadForm idPrefix="hero" />
-        </Container>
-      </header>
+      <Hero />
 
       <Section id="overview" ariaLabelledby="overview-heading">
         <Container className="grid gap-12 lg:grid-cols-2">
