@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { LeadForm } from "@/components/LeadForm";
 import { Container } from "@/components/ui";
-import { copy, heroChips, images } from "@/lib/project-data";
-import { homePage } from "@/lib/pages";
+import { images } from "@/lib/project-data";
 
 export function Hero() {
   return (
@@ -22,38 +21,30 @@ export function Hero() {
         />
       </div>
 
-      <Container className="relative grid items-center gap-10 py-14 sm:py-16 lg:min-h-[38rem] lg:grid-cols-[minmax(0,1fr)_26.5rem] lg:gap-12 lg:py-24">
-        <div className="max-w-2xl">
-          <ul className="flex flex-wrap gap-2">
-            {heroChips.map((chip) => (
-              <li
-                key={chip}
-                className="border border-paper/25 bg-ink/35 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-paper backdrop-blur-sm"
-              >
-                {chip}
-              </li>
-            ))}
-          </ul>
+      <Container className="relative grid items-center gap-8 py-12 sm:py-14 lg:min-h-[32rem] lg:grid-cols-[minmax(0,1fr)_26.5rem] lg:gap-12 lg:py-20">
+        <div className="max-w-xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-paper/75">
+            Coming soon · Oakville
+          </p>
           <h1
             id="page-title"
-            className="mt-6 font-display text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.5rem]"
+            className="mt-4 font-display text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-[3.4rem]"
           >
             <span className="block">Five Oaks Oakville</span>
-            <span className="mt-2 block text-[1.55rem] font-normal text-paper/85 sm:text-3xl lg:text-[2rem]">
+            <span className="mt-2 block text-[1.45rem] font-normal text-paper/85 sm:text-3xl">
               by Caivan Communities
             </span>
           </h1>
-          <p
-            id="answer"
-            className="mt-6 max-w-xl text-base leading-7 text-paper/90 sm:text-lg sm:leading-8"
-          >
-            {homePage.answer}
-          </p>
-          <p className="mt-4 max-w-xl text-sm leading-6 text-paper/70">
-            {copy.independentDisclosure}
+          <p id="answer" className="mt-5 max-w-md text-base leading-7 text-paper/88">
+            Coming-soon detached homes and townhomes. Official prices are not
+            published yet — register for verified updates.
           </p>
         </div>
-        <LeadForm idPrefix="hero" />
+        <LeadForm
+          idPrefix="hero"
+          heading="Get Project Updates"
+          support="We’ll email you when official pricing, plans and launch details are published."
+        />
       </Container>
     </section>
   );
