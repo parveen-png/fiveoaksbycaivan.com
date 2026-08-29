@@ -258,13 +258,15 @@ export function LeadForm({
         aria-describedby={showSummary ? summaryId : undefined}
       >
         <div className="absolute -left-[10000px] h-0 w-0 overflow-hidden" aria-hidden="true">
-          <label htmlFor={`${idPrefix}-companyWebsite`}>Company website</label>
+          <label htmlFor={`${idPrefix}-hp`}>Leave blank</label>
           <input
-            id={`${idPrefix}-companyWebsite`}
-            name="companyWebsite"
+            id={`${idPrefix}-hp`}
+            name="hp_field"
             value={values.companyWebsite}
             tabIndex={-1}
             autoComplete="off"
+            data-1p-ignore="true"
+            data-lpignore="true"
             onChange={(event) => update("companyWebsite", event.target.value)}
           />
         </div>

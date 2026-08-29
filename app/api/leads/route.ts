@@ -53,6 +53,7 @@ export async function POST(request: Request) {
   }
 
   if (parsed.data.companyWebsite.trim().length > 0) {
+    logger.info("Lead honeypot tripped");
     return NextResponse.json({ ok: true, captured: false });
   }
 
