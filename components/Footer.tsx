@@ -15,8 +15,7 @@ export function Footer() {
               {project.name} Oakville
             </p>
             <p className="mt-3 text-sm leading-6 text-paper/80">
-              Independent project information for {project.name} by{" "}
-              {project.developer} in {project.municipality}, {project.country}.
+              {copy.independentDisclosure}
             </p>
           </div>
           <div>

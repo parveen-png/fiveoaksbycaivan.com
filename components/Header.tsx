@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { copy, project, images } from "@/lib/project-data";
+import { project, images } from "@/lib/project-data";
 import { navLinks } from "@/lib/routes";
 
 export function Header() {
@@ -65,9 +65,6 @@ export function Header() {
           </details>
         </div>
       </div>
-      <p className="border-t border-rule bg-brass-soft px-5 py-1.5 text-center text-[0.7rem] font-medium tracking-wide text-ink sm:text-xs">
-        {copy.independentDisclosure}
-      </p>
     </header>
   );
 }
